@@ -1,9 +1,13 @@
-$body-color: blue;
+$color1: rgb(105, 105, 219);
+$color2: rgb(133, 179, 180);
+$color3: white;
+$color4: yellow;
 
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: 'PT Sans', sans-serif;
 }
 
 
@@ -82,15 +86,17 @@ textarea {
  /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+
+  //Nav Section
+
   #nav {
-    background:blue;
-   
+    background:$color1;
   }
 
-   .nav-block {
+  .nav-block {
   display: inline-block;
   box-sizing: border-box;
- 
   }
 
   .user{
@@ -112,21 +118,123 @@ textarea {
     float:right;
     padding-right:30px;
     padding-top:3px;
-   
   }
 
   .icon{
     padding-left:50px;
     font-size:1.2em;
-    
   }
 
+
+  //Main Section
+
+
+  //Section 1
+
+  #main{
+    width:100%;
+    display: flex;
+  }
+
+  #section1{
+    width:300px;
+    height:800px;
+    color:$color3;
+    background: $color2;
+  }
+
+  .sec1{
+    margin:30px 50px 0px 30px 
+  }
+
+  .item{
+    margin-bottom:30px;
+  }
+
+  .icon1{
+    font-size:1.0em;
+    color:$color3;
+    padding-right:10px;
+  }
+
+  #calender{
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    text-align:center;
+  }
+
+  .date{
+    display:inline-block;
+  }
+
+  #month{
+    padding-right:10px;
+  }
+
+  .dir{
+    font-size:0.7em;
+    padding-left:10px;
+    float:right;
+  }
+
+  #lt{
+    border-width: 0px;
+    display: inline-block;
+    padding-right:10px;
+  }
+
+  #gt{
+    border-width: 0px;
+    display: inline-block;
+    padding-left:10px;
+  }
+
+  #table{
+    width:100%;
+    border-collapse: collapse;
+  }
+
+  // Section 2
+
+  #section2{
+    width:calc(100% - 300px);
+  }
+
+  .sec2{
+    margin:0px 20px 0px 20px;
+  }
+
+  .task{
+    width:100%;
+  }
+
+  #input-task{
+    width:80%;
+  }
+
+  #task-submit{
+    width:19%;
+  }
   
 
+  //Dynamically generated content 
+
+  .elem{
+    padding:10px 10px 10px 10px;
+  }
+
+  .elem2{
+    float:right;
+  }
 
 
+  table tr td:nth-child(1){
+    background:red;
+  }
 
-
+  #realhome{
+    width:100%;
+  }
 
 
 

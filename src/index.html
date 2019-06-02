@@ -7,16 +7,89 @@
     <title>Joshua</title>
     <link rel="icon" href="fork.png" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav id="nav">
-            <div class="nav-block user"><span class="user-icon"><i class="fas fa-check-double"></i></span><span>User Name</span></div>
-            <div class="nav-block settings">
-            <span><i class="fas fa-search"></i></span>  <input type="search">
-            <div class="nav-block nav-right"><span class="icon"><i class="fas fa-cog"></i></span><span class="icon"><i class="far fa-bell"></i></span><span class="icon"><i class="fas fa-plus"></i></span></div>
+            <div class="nav-block user">
+                <span class="user-icon">
+                    <i class="fas fa-check-double"></i>
+                </span>
+                <span>User Name</span>
+            </div>
+            <div class="settings">
+                <span>
+                    <i class="fas fa-search"></i>
+                </span>  
+                <input type="search" placeholder="Quick Find">
+                <div class="nav-right">
+                    <span class="icon"><i class="fas fa-cog"></i></span>
+                    <span class="icon"><i class="far fa-bell"></i></span>
+                    <span class="icon"><i class="fas fa-plus"></i></span>
+                </div>
             </div>
         </nav>
     </header>
+
+    <main id="main">
+    
+        <section id="section1">
+            <div class="sec1">
+                <div class="item"><span><i class="fas fa-inbox icon1"></i></span>Inbox</div>
+                <div class="item"><span><i class="fas fa-calendar-day icon1"></i></span> Today</div>
+                <div class="item"><span><i class="fas fa-calendar-week icon1"></i></span> Next 7 days</div>
+                
+                <div id="calender">
+                    <div>  
+                        <div class="date">
+                            <span id="month"></span>
+                            <span id="year"></span>
+                        </div>
+                        <div class="dir">
+                            <span id="lt"><i class="fas fa-less-than icon1"></i></span>
+                            <span><i class="far fa-dot-circle icon1"></i></span>
+                            <span id="gt"><i class="fas fa-greater-than icon1"></i></span>
+                        </div>
+                    </div>
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody id="calender-body">
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+        <section id="section2"class="hidden" >
+            <div class="sec2">
+                <h1>Tasks</h1>
+                
+
+                <p>Today</p>
+                <div id="section"></div>
+            </div>
+        </section>
+        <div id="realhome">
+                <div class="task">
+                    <input type="text" placeholder="Add a task" id="input-task">
+                    <button id="task-submit">Task</button>
+                </div>
+                <div id=home>
+
+                </div>
+        </div>
+    </main>
+    
 </body>
 </html>
